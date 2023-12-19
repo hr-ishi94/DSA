@@ -82,10 +82,11 @@ root.preorder()
 print('Preorder')
 # root.inorder()    
 # print('Inorder')
-# root.postorder()    
-# print('Postorder')
 
-root.delete(10)
+root.delete(2)
 
 root.preorder()    
 print('Preorder')
+
+root.postorder()    
+print('Postorder')

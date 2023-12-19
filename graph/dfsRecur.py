@@ -30,6 +30,7 @@ def DFS(node,visited,graph):
             if i not in visited:
                 print(i,end=' ')
                 visited.add(i)
+
 def BFS(node,graph):
     if node not in graph:
         print('node not found!')
@@ -45,6 +46,10 @@ def BFS(node,graph):
                 arr.append(i)
     for i in visit:
         print(i,end=' ')
+    for i in graph:
+        if i not in visit:
+            print(i,end=' ')
+            visit.add(i)
 
 
     

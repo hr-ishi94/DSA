@@ -27,12 +27,15 @@ def DFSiterative(node,graph):
         if curr not in visited:
             print(curr,end=' ')
             visited.add(curr)
-            for i in graph[node]:
+            for i in graph[curr]:
                 stack.append(i)
     for i in graph:
         if i not in visited:
             print(i,end=' ')
             visited.add(i)
+
+
+
 
 
 
