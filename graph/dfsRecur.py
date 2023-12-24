@@ -39,13 +39,12 @@ def BFS(node,graph):
     arr=deque([node])
     while arr:
         vertex=arr.popleft()
-        
         visit.add(vertex)
+        print(vertex,end=' ')
         for i in graph[vertex]:
             if i not in visit:
                 arr.append(i)
-    for i in visit:
-        print(i,end=' ')
+    
     for i in graph:
         if i not in visit:
             print(i,end=' ')
