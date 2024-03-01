@@ -113,20 +113,17 @@ class LinkedList:
             n.ref = n.ref.ref
 
             
-
+arr= [10,20,30,40,50,60]
 
 LL= LinkedList()
-LL.add_begin(12)
-LL.add_begin(11)
-LL.add_end(15)
-LL.add_end(17)
-LL.add_end(13)
-LL.add_after(19,13)
-LL.add_before(20,11)
+for num in arr:
+    LL.add_begin(num)
+# LL.add_begin(11)
+# LL.add_end(15)
+# LL.add_end(17)
+# LL.add_end(13)
+# LL.add_after(19,13)
+# LL.add_before(20,11)
 LL.delete_begin()
 LL.delete_end()
-LL.delete_val(11)
-LL.delete_val(15)
-LL.delete_val(17)
-LL.delete_val(13)
 LL.printLL()
