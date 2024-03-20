@@ -1,31 +1,22 @@
-stack =[]
+arr= [ 1,2,3,4,5,6,7,8 ]
+stack = []
 
-def push():
-    num=int(input("Enter the number: "))
-    stack.append(num)
-    print("new stack:",stack)
-    return 
+def push(arr):
+    for i in arr:
+        stack.append(i)
+    return stack
 
-def pop():
-    num = stack.pop(0)
-    print(num," is popped out! ")
-    return 
+def pop(arr):
+    pop = arr.pop()
+    return pop
 
-def peek():
-    if stack:
-        print("stack head is:",stack[-1])
-    else:
-        print("Stack is empty!")
-    return
+def peek(arr):
+    return arr[-1]
 
-while True:
-    print("Enter your choice: 1.push 2.pop 3.peek...")
-    choice=int(input())
-    if choice == 1:
-        push()
-    elif choice == 2:
-        pop()
-    elif choice == 3:
-        peek()
-    else:
-        print("enter valid choice...!")
+print(push(arr))
+print(pop(arr))
+print(pop(arr))
+print(pop(arr))
+print(pop(arr))
+print(arr)
+print(peek(arr))
