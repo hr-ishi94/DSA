@@ -10,7 +10,7 @@ target = 4
 # BINARY SEARCH
 def binary_search(arr,tar):
     low = 0
-    high = len(arr)-1
+    high = len(arr) - 1
     while low <= high:
         mid = ( high + low )//2
         if arr[mid] == tar:
